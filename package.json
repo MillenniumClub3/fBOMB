@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "@openzeppelin/contracts": "^4.7.3",
+    "@openzeppelin/contracts-upgradeable": "^4.7.3",
+    "@openzeppelin/truffle-upgrades": "^1.17.0",
+    "chai": "^4.3.6",
+    "truffle": "^5.6.4",
+    "dotenv": "^16.0.3",
+    "@truffle/hdwallet-provider": "^2.1.1",
+    "truffle-plugin-stdjsonin": "github:mhrsalehi/truffle-plugin-stdjsonin",
+    "truffle-plugin-verify": "^0.5.33"
+  }
+}
