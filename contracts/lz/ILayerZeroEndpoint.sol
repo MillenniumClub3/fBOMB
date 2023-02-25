@@ -9,7 +9,7 @@
  *
  * @title: ILayerZeroEndpoint.sol
  * @author: LayerZero
- * @notice: Interface for LayerZeroEndpoint
+ * @notice Interface for LayerZeroEndpoint
  * OG Source: https://etherscan.io/address/0xa74ae2c6fca0cedbaef30a8ceef834b247186bcf#code
  */
 

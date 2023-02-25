@@ -9,7 +9,7 @@
  *
  * @title: EIP-165: Standard Interface Detection
  * @author: Christian Reitwießner, Nick Johnson, Fabian Vogelsteller, Jordi Baylina, Konrad Feldmeier, William Entriken
- * @dev Creates a standard method to publish and detect what interfaces a smart contract implements.
+ * @notice Creates a standard method to publish and detect what interfaces a smart contract implements.
  * @custom:source https://eips.ethereum.org/EIPS/eip-165
  * @custom:change-log interface ERC165 -> interface IERC165
  * @custom:change-log readability enhanced

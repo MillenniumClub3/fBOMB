@@ -9,7 +9,7 @@
  *
  * @title: Roles.sol
  * @author: Max Flow O2 -> @MaxFlowO2 on bird app/GitHub
- * @dev Library for MaxAcess.sol
+ * @notice Library for MaxAcess.sol
  * @custom:error-code Roles:1 User has role already
  * @custom:error-code Roles:2 User does not have role to revoke
  * @custom:change-log custom errors added above

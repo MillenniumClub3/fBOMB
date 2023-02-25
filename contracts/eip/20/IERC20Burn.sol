@@ -9,7 +9,7 @@
  *
  * @title:  EIP-20: Token Standard, extension
  * @author: Unknown
- * @notice: n/a
+ * @notice n/a
  * @custom:change-log backwards compatability to EIP 165 added
  * @custom:change-log MIT -> Apache-2.0
 

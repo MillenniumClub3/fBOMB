@@ -9,7 +9,7 @@
  *
  * @title Max-20-UUPS-LZ-Implementation
  * @author Max Flow O2 -> @MaxFlowO2 on bird app/GitHub
- * @dev 
+ * @notice 
  */
 
 // SPDX-License-Identifier: Apache-2.0

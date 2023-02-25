@@ -9,7 +9,7 @@
  *
  * @title: [Not an EIP]: Contract Developer Standard
  * @author: Max Flow O2 -> @MaxFlowO2 on bird app/GitHub
- * @dev Interface for onlyDev() role
+ * @notice Interface for onlyDev() role
  */
 
 // SPDX-License-Identifier: Apache-2.0

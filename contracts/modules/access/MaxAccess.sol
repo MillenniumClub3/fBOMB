@@ -9,7 +9,7 @@
  *
  * @title: [Not an EIP]: MaxFlow's 173/Dev/Roles Interface
  * @author: Max Flow O2 -> @MaxFlowO2 on bird app/GitHub
- * @dev Interface for MaxAccess
+ * @notice Interface for MaxAccess
  */
 
 // SPDX-License-Identifier: Apache-2.0

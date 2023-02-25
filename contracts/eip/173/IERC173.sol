@@ -9,7 +9,7 @@
  *
  * @title: EIP-173: Contract Ownership Standard
  * @author: Nick Mudge, Dan Finlay
- * @notice: This specification defines standard functions for owning or controlling a contract.
+ * @notice This specification defines standard functions for owning or controlling a contract.
  *          the ERC-165 identifier for this interface is 0x7f5828d0
  * @custom:URI https://eips.ethereum.org/EIPS/eip-173
  * @custom:change-log MIT -> Apache-2.0

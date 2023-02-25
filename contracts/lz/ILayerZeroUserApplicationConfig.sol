@@ -9,7 +9,7 @@
  *
  * @title: ILayerZeroUserApplicationConfig.sol
  * @author: LayerZero
- * @notice: Interface for LayerZeroUserApplicationConfig
+ * @notice Interface for LayerZeroUserApplicationConfig
  * OG Source: https://etherscan.io/address/0xa74ae2c6fca0cedbaef30a8ceef834b247186bcf#code
  */
 

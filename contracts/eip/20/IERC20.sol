@@ -9,7 +9,7 @@
  *
  * @title:  EIP-20: Token Standard 
  * @author: Fabian Vogelsteller, Vitalik Buterin
- * @dev The following standard allows for the implementation of a standard API for tokens within
+ * @notice The following standard allows for the implementation of a standard API for tokens within
  *      smart contracts. This standard provides basic functionality to transfer tokens, as well
  *      as allow tokens to be approved so they can be spent by another on-chain third party.
  * @custom:source https://eips.ethereum.org/EIPS/eip-20

@@ -1,0 +1,526 @@
+{
+  "manifestVersion": "3.2",
+  "proxies": [
+    {
+      "address": "0x74ccbe53F77b08632ce0CB91D3A545bF6B8E0979",
+      "kind": "uups"
+    }
+  ],
+  "impls": {
+    "aa0579707ceb7d7c9ad6de798f2f4bcad932a8f48daac5a5ffe3608c6504a5ca": {
+      "address": "0x8cf881799E3B5ab24271A9B66b6Ca2b0e575B1ef",
+      "layout": {
+        "solcVersion": "0.8.17",
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_uint8",
+            "src": "../@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "contract": "Max20ImplementationUUPSLZ",
+            "label": "token20",
+            "type": "t_struct(Token)5350_storage",
+            "src": "../project:/contracts/Max-20-UUPS-LZ.sol:63"
+          },
+          {
+            "contract": "Max20ImplementationUUPSLZ",
+            "label": "contractRoles",
+            "type": "t_struct(Role)6332_storage",
+            "src": "../project:/contracts/Max-20-UUPS-LZ.sol:64"
+          },
+          {
+            "contract": "Max20ImplementationUUPSLZ",
+            "label": "taxExempt",
+            "type": "t_struct(Access)6109_storage",
+            "src": "../project:/contracts/Max-20-UUPS-LZ.sol:65"
+          },
+          {
+            "contract": "Max20ImplementationUUPSLZ",
+            "label": "Token",
+            "type": "t_address",
+            "src": "../project:/contracts/Max-20-UUPS-LZ.sol:73"
+          },
+          {
+            "contract": "Max20ImplementationUUPSLZ",
+            "label": "WToken",
+            "type": "t_address",
+            "src": "../project:/contracts/Max-20-UUPS-LZ.sol:74"
+          },
+          {
+            "contract": "Max20ImplementationUUPSLZ",
+            "label": "treasury",
+            "type": "t_address",
+            "src": "../project:/contracts/Max-20-UUPS-LZ.sol:75"
+          },
+          {
+            "contract": "Max20ImplementationUUPSLZ",
+            "label": "endpoint",
+            "type": "t_contract(ILayerZeroEndpoint)6942",
+            "src": "../project:/contracts/Max-20-UUPS-LZ.sol:81"
+          },
+          {
+            "contract": "Max20ImplementationUUPSLZ",
+            "label": "failedMessages",
+            "type": "t_mapping(t_uint16,t_mapping(t_bytes_memory_ptr,t_mapping(t_uint256,t_struct(FailedMessages)1056_storage)))",
+            "src": "../project:/contracts/Max-20-UUPS-LZ.sol:88"
+          },
+          {
+            "contract": "Max20ImplementationUUPSLZ",
+            "label": "trustedRemoteLookup",
+            "type": "t_mapping(t_uint16,t_bytes_storage)",
+            "src": "../project:/contracts/Max-20-UUPS-LZ.sol:89"
+          },
+          {
+            "contract": "Max20ImplementationUUPSLZ",
+            "label": "gasForDestinationLzReceive",
+            "type": "t_uint256",
+            "src": "../project:/contracts/Max-20-UUPS-LZ.sol:90"
+          },
+          {
+            "contract": "Max20ImplementationUUPSLZ",
+            "label": "__gap",
+            "type": "t_array(t_uint256)35_storage",
+            "src": "../project:/contracts/Max-20-UUPS-LZ.sol:679"
+          },
+          {
+            "contract": "ERC1967UpgradeUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "../@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:211"
+          },
+          {
+            "contract": "UUPSUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "../@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:107"
+          }
+        ],
+        "types": {
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_struct(Token)5350_storage": {
+            "label": "struct Lib20.Token",
+            "members": [
+              {
+                "label": "balances",
+                "type": "t_mapping(t_address,t_uint256)"
+              },
+              {
+                "label": "allowances",
+                "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))"
+              },
+              {
+                "label": "totalSupply",
+                "type": "t_uint256"
+              },
+              {
+                "label": "decimals",
+                "type": "t_uint8"
+              },
+              {
+                "label": "name",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "symbol",
+                "type": "t_string_storage"
+              }
+            ]
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_struct(Role)6332_storage": {
+            "label": "struct Roles.Role",
+            "members": [
+              {
+                "label": "bearer",
+                "type": "t_mapping(t_address,t_mapping(t_bytes4,t_bool))"
+              },
+              {
+                "label": "owner",
+                "type": "t_address"
+              },
+              {
+                "label": "developer",
+                "type": "t_address"
+              },
+              {
+                "label": "admin",
+                "type": "t_address"
+              }
+            ]
+          },
+          "t_mapping(t_address,t_mapping(t_bytes4,t_bool))": {
+            "label": "mapping(address => mapping(bytes4 => bool))"
+          },
+          "t_mapping(t_bytes4,t_bool)": {
+            "label": "mapping(bytes4 => bool)"
+          },
+          "t_bytes4": {
+            "label": "bytes4"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_struct(Access)6109_storage": {
+            "label": "struct Lists.Access",
+            "members": [
+              {
+                "label": "_status",
+                "type": "t_bool"
+              },
+              {
+                "label": "added",
+                "type": "t_struct(Counter)5978_storage"
+              },
+              {
+                "label": "removed",
+                "type": "t_struct(Counter)5978_storage"
+              },
+              {
+                "label": "allowed",
+                "type": "t_mapping(t_address,t_bool)"
+              }
+            ]
+          },
+          "t_struct(Counter)5978_storage": {
+            "label": "struct CountersV2.Counter",
+            "members": [
+              {
+                "label": "value",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_contract(ILayerZeroEndpoint)6942": {
+            "label": "contract ILayerZeroEndpoint"
+          },
+          "t_mapping(t_uint16,t_mapping(t_bytes_memory_ptr,t_mapping(t_uint256,t_struct(FailedMessages)1056_storage)))": {
+            "label": "mapping(uint16 => mapping(bytes => mapping(uint256 => struct Max20ImplementationUUPSLZ.FailedMessages)))"
+          },
+          "t_uint16": {
+            "label": "uint16"
+          },
+          "t_mapping(t_bytes_memory_ptr,t_mapping(t_uint256,t_struct(FailedMessages)1056_storage))": {
+            "label": "mapping(bytes => mapping(uint256 => struct Max20ImplementationUUPSLZ.FailedMessages))"
+          },
+          "t_bytes_storage": {
+            "label": "bytes"
+          },
+          "t_mapping(t_uint256,t_struct(FailedMessages)1056_storage)": {
+            "label": "mapping(uint256 => struct Max20ImplementationUUPSLZ.FailedMessages)"
+          },
+          "t_struct(FailedMessages)1056_storage": {
+            "label": "struct Max20ImplementationUUPSLZ.FailedMessages",
+            "members": [
+              {
+                "label": "payloadLength",
+                "type": "t_uint256"
+              },
+              {
+                "label": "payloadHash",
+                "type": "t_bytes32"
+              }
+            ]
+          },
+          "t_bytes32": {
+            "label": "bytes32"
+          },
+          "t_mapping(t_uint16,t_bytes_storage)": {
+            "label": "mapping(uint16 => bytes)"
+          },
+          "t_array(t_uint256)35_storage": {
+            "label": "uint256[35]"
+          }
+        }
+      }
+    },
+    "4c7b05b7a9467c4a4af32544b9599b433a6a0d782f9f7e0defd3c2b93e6b05a0": {
+      "address": "0xEb4C8841Bf2a292c364959EBb17c54C8A64e6eDa",
+      "txHash": "0x76b4a49204702892c74c4548a2a1b68fb0a810586f6f41fbc2d5ab2094b5af51",
+      "layout": {
+        "solcVersion": "0.8.17",
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "_initialized",
+            "type": "t_uint8",
+            "src": "../@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "contract": "Initializable",
+            "label": "_initializing",
+            "type": "t_bool",
+            "src": "../@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol:67"
+          },
+          {
+            "contract": "Max20ImplementationUUPSLZ",
+            "label": "token20",
+            "type": "t_struct(Token)5350_storage",
+            "src": "../project:/contracts/Max-20-UUPS-LZ.sol:63"
+          },
+          {
+            "contract": "Max20ImplementationUUPSLZ",
+            "label": "contractRoles",
+            "type": "t_struct(Role)6332_storage",
+            "src": "../project:/contracts/Max-20-UUPS-LZ.sol:64"
+          },
+          {
+            "contract": "Max20ImplementationUUPSLZ",
+            "label": "taxExempt",
+            "type": "t_struct(Access)6109_storage",
+            "src": "../project:/contracts/Max-20-UUPS-LZ.sol:65"
+          },
+          {
+            "contract": "Max20ImplementationUUPSLZ",
+            "label": "Token",
+            "type": "t_address",
+            "src": "../project:/contracts/Max-20-UUPS-LZ.sol:73"
+          },
+          {
+            "contract": "Max20ImplementationUUPSLZ",
+            "label": "WToken",
+            "type": "t_address",
+            "src": "../project:/contracts/Max-20-UUPS-LZ.sol:74"
+          },
+          {
+            "contract": "Max20ImplementationUUPSLZ",
+            "label": "treasury",
+            "type": "t_address",
+            "src": "../project:/contracts/Max-20-UUPS-LZ.sol:75"
+          },
+          {
+            "contract": "Max20ImplementationUUPSLZ",
+            "label": "endpoint",
+            "type": "t_contract(ILayerZeroEndpoint)6942",
+            "src": "../project:/contracts/Max-20-UUPS-LZ.sol:81"
+          },
+          {
+            "contract": "Max20ImplementationUUPSLZ",
+            "label": "failedMessages",
+            "type": "t_mapping(t_uint16,t_mapping(t_bytes_memory_ptr,t_mapping(t_uint256,t_struct(FailedMessages)1056_storage)))",
+            "src": "../project:/contracts/Max-20-UUPS-LZ.sol:88"
+          },
+          {
+            "contract": "Max20ImplementationUUPSLZ",
+            "label": "trustedRemoteLookup",
+            "type": "t_mapping(t_uint16,t_bytes_storage)",
+            "src": "../project:/contracts/Max-20-UUPS-LZ.sol:89"
+          },
+          {
+            "contract": "Max20ImplementationUUPSLZ",
+            "label": "gasForDestinationLzReceive",
+            "type": "t_uint256",
+            "src": "../project:/contracts/Max-20-UUPS-LZ.sol:90"
+          },
+          {
+            "contract": "Max20ImplementationUUPSLZ",
+            "label": "__gap",
+            "type": "t_array(t_uint256)35_storage",
+            "src": "../project:/contracts/Max-20-UUPS-LZ.sol:679"
+          },
+          {
+            "contract": "ERC1967UpgradeUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "../@openzeppelin/contracts-upgradeable/proxy/ERC1967/ERC1967UpgradeUpgradeable.sol:211"
+          },
+          {
+            "contract": "UUPSUpgradeable",
+            "label": "__gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "../@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol:107"
+          }
+        ],
+        "types": {
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          },
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_struct(Token)5350_storage": {
+            "label": "struct Lib20.Token",
+            "members": [
+              {
+                "label": "balances",
+                "type": "t_mapping(t_address,t_uint256)"
+              },
+              {
+                "label": "allowances",
+                "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))"
+              },
+              {
+                "label": "totalSupply",
+                "type": "t_uint256"
+              },
+              {
+                "label": "decimals",
+                "type": "t_uint8"
+              },
+              {
+                "label": "name",
+                "type": "t_string_storage"
+              },
+              {
+                "label": "symbol",
+                "type": "t_string_storage"
+              }
+            ]
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)"
+          },
+          "t_address": {
+            "label": "address"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))"
+          },
+          "t_uint8": {
+            "label": "uint8"
+          },
+          "t_string_storage": {
+            "label": "string"
+          },
+          "t_struct(Role)6332_storage": {
+            "label": "struct Roles.Role",
+            "members": [
+              {
+                "label": "bearer",
+                "type": "t_mapping(t_address,t_mapping(t_bytes4,t_bool))"
+              },
+              {
+                "label": "owner",
+                "type": "t_address"
+              },
+              {
+                "label": "developer",
+                "type": "t_address"
+              },
+              {
+                "label": "admin",
+                "type": "t_address"
+              }
+            ]
+          },
+          "t_mapping(t_address,t_mapping(t_bytes4,t_bool))": {
+            "label": "mapping(address => mapping(bytes4 => bool))"
+          },
+          "t_mapping(t_bytes4,t_bool)": {
+            "label": "mapping(bytes4 => bool)"
+          },
+          "t_bytes4": {
+            "label": "bytes4"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_struct(Access)6109_storage": {
+            "label": "struct Lists.Access",
+            "members": [
+              {
+                "label": "_status",
+                "type": "t_bool"
+              },
+              {
+                "label": "added",
+                "type": "t_struct(Counter)5978_storage"
+              },
+              {
+                "label": "removed",
+                "type": "t_struct(Counter)5978_storage"
+              },
+              {
+                "label": "allowed",
+                "type": "t_mapping(t_address,t_bool)"
+              }
+            ]
+          },
+          "t_struct(Counter)5978_storage": {
+            "label": "struct CountersV2.Counter",
+            "members": [
+              {
+                "label": "value",
+                "type": "t_uint256"
+              }
+            ]
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)"
+          },
+          "t_contract(ILayerZeroEndpoint)6942": {
+            "label": "contract ILayerZeroEndpoint"
+          },
+          "t_mapping(t_uint16,t_mapping(t_bytes_memory_ptr,t_mapping(t_uint256,t_struct(FailedMessages)1056_storage)))": {
+            "label": "mapping(uint16 => mapping(bytes => mapping(uint256 => struct Max20ImplementationUUPSLZ.FailedMessages)))"
+          },
+          "t_uint16": {
+            "label": "uint16"
+          },
+          "t_mapping(t_bytes_memory_ptr,t_mapping(t_uint256,t_struct(FailedMessages)1056_storage))": {
+            "label": "mapping(bytes => mapping(uint256 => struct Max20ImplementationUUPSLZ.FailedMessages))"
+          },
+          "t_bytes_storage": {
+            "label": "bytes"
+          },
+          "t_mapping(t_uint256,t_struct(FailedMessages)1056_storage)": {
+            "label": "mapping(uint256 => struct Max20ImplementationUUPSLZ.FailedMessages)"
+          },
+          "t_struct(FailedMessages)1056_storage": {
+            "label": "struct Max20ImplementationUUPSLZ.FailedMessages",
+            "members": [
+              {
+                "label": "payloadLength",
+                "type": "t_uint256"
+              },
+              {
+                "label": "payloadHash",
+                "type": "t_bytes32"
+              }
+            ]
+          },
+          "t_bytes32": {
+            "label": "bytes32"
+          },
+          "t_mapping(t_uint16,t_bytes_storage)": {
+            "label": "mapping(uint16 => bytes)"
+          },
+          "t_array(t_uint256)35_storage": {
+            "label": "uint256[35]"
+          }
+        }
+      }
+    }
+  }
+}

@@ -9,7 +9,7 @@
  *
  * @title: [Not an EIP]: Contract Roles Standard
  * @author: Max Flow O2 -> @MaxFlowO2 on bird app/GitHub
- * @dev Interface for MaxAccess version of Roles
+ * @notice Interface for MaxAccess version of Roles
  */
 
 // SPDX-License-Identifier: Apache-2.0

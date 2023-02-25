@@ -9,7 +9,7 @@
  *
  * @title: [Not an EIP]: Access lists
  * @author: @MaxFlowO2 on bird app/GitHub
- * @dev Formerly whitelists, now allowlist, or whatever it's called.
+ * @notice Formerly whitelists, now allowlist, or whatever it's called.
  * @custom:change-log removed end variable/functions (un-needed)
  * @custom:change-log variables renamed from lib whitelist
  * @custom:change-log internal -> internal

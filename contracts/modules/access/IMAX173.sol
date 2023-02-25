@@ -9,7 +9,7 @@
  *
  * @title:  EIP-173: Contract Ownership Standard, MaxFlowO2's extension
  * @author: Max Flow O2 -> @MaxFlowO2 on bird app/GitHub
- * @dev Interface for enhancing EIP-173
+ * @notice Interface for enhancing EIP-173
  * @custom:change-log UUPS Upgradable
  */
 

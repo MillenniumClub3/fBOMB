@@ -4,11 +4,11 @@
 pragma solidity ^0.8.1;
 
 /**
- * @dev Collection of functions related to the address type
+ * @notice Collection of functions related to the address type
  */
 library Address {
     /**
-     * @dev Returns true if `account` is a contract.
+     * @notice Returns true if `account` is a contract.
      *
      * [IMPORTANT]
      * ====
@@ -42,7 +42,7 @@ library Address {
     }
 
     /**
-     * @dev Replacement for Solidity's `transfer`: sends `amount` wei to
+     * @notice Replacement for Solidity's `transfer`: sends `amount` wei to
      * `recipient`, forwarding all available gas and reverting on errors.
      *
      * https://eips.ethereum.org/EIPS/eip-1884[EIP1884] increases the gas cost
@@ -65,7 +65,7 @@ library Address {
     }
 
     /**
-     * @dev Performs a Solidity function call using a low level `call`. A
+     * @notice Performs a Solidity function call using a low level `call`. A
      * plain `call` is an unsafe replacement for a function call: use this
      * function instead.
      *
@@ -87,7 +87,7 @@ library Address {
     }
 
     /**
-     * @dev Same as {xref-Address-functionCall-address-bytes-}[`functionCall`], but with
+     * @notice Same as {xref-Address-functionCall-address-bytes-}[`functionCall`], but with
      * `errorMessage` as a fallback revert reason when `target` reverts.
      *
      * _Available since v3.1._
@@ -101,7 +101,7 @@ library Address {
     }
 
     /**
-     * @dev Same as {xref-Address-functionCall-address-bytes-}[`functionCall`],
+     * @notice Same as {xref-Address-functionCall-address-bytes-}[`functionCall`],
      * but also transferring `value` wei to `target`.
      *
      * Requirements:
@@ -120,7 +120,7 @@ library Address {
     }
 
     /**
-     * @dev Same as {xref-Address-functionCallWithValue-address-bytes-uint256-}[`functionCallWithValue`], but
+     * @notice Same as {xref-Address-functionCallWithValue-address-bytes-uint256-}[`functionCallWithValue`], but
      * with `errorMessage` as a fallback revert reason when `target` reverts.
      *
      * _Available since v3.1._
@@ -137,7 +137,7 @@ library Address {
     }
 
     /**
-     * @dev Same as {xref-Address-functionCall-address-bytes-}[`functionCall`],
+     * @notice Same as {xref-Address-functionCall-address-bytes-}[`functionCall`],
      * but performing a static call.
      *
      * _Available since v3.3._
@@ -147,7 +147,7 @@ library Address {
     }
 
     /**
-     * @dev Same as {xref-Address-functionCall-address-bytes-string-}[`functionCall`],
+     * @notice Same as {xref-Address-functionCall-address-bytes-string-}[`functionCall`],
      * but performing a static call.
      *
      * _Available since v3.3._
@@ -162,7 +162,7 @@ library Address {
     }
 
     /**
-     * @dev Same as {xref-Address-functionCall-address-bytes-}[`functionCall`],
+     * @notice Same as {xref-Address-functionCall-address-bytes-}[`functionCall`],
      * but performing a delegate call.
      *
      * _Available since v3.4._
@@ -172,7 +172,7 @@ library Address {
     }
 
     /**
-     * @dev Same as {xref-Address-functionCall-address-bytes-string-}[`functionCall`],
+     * @notice Same as {xref-Address-functionCall-address-bytes-string-}[`functionCall`],
      * but performing a delegate call.
      *
      * _Available since v3.4._
@@ -187,7 +187,7 @@ library Address {
     }
 
     /**
-     * @dev Tool to verify that a low level call to smart-contract was successful, and revert (either by bubbling
+     * @notice Tool to verify that a low level call to smart-contract was successful, and revert (either by bubbling
      * the revert reason or using the provided one) in case of unsuccessful call or if target was not a contract.
      *
      * _Available since v4.8._
@@ -211,7 +211,7 @@ library Address {
     }
 
     /**
-     * @dev Tool to verify that a low level call was successful, and revert if it wasn't, either by bubbling the
+     * @notice Tool to verify that a low level call was successful, and revert if it wasn't, either by bubbling the
      * revert reason or using the provided one.
      *
      * _Available since v4.3._

@@ -9,7 +9,7 @@
  *
  * @title: [Not an EIP] List interface, for address access control
  * @author: Max Flow O2 -> @MaxFlowO2 on bird app/GitHub
- * @dev Interface for avowed or disavowed lists via addresses
+ * @notice Interface for avowed or disavowed lists via addresses
  */
 
 // SPDX-License-Identifier: Apache-2.0

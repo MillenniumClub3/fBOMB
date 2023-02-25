@@ -9,7 +9,7 @@
  *
  * @title: [Not an EIP]: MaxErrors, so I can import errors, anywhere minus libraries
  * @author: Max Flow O2 -> @MaxFlowO2 on bird app/GitHub
- * @dev Does not have an ERC165 return since no external/public functions
+ * @notice Does not have an ERC165 return since no external/public functions
  * @custom:change-log abstract contract -> interface
  */
 

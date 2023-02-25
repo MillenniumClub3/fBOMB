@@ -9,7 +9,7 @@
  *
  * @title: Library 20
  * @author: Max Flow O2 -> @MaxFlowO2 on bird app/GitHub
- * @dev Library for EIP 20
+ * @notice Library for EIP 20
  * @custom:change-log Custom errors added above
  *
  * Include with 'using Lib20 for Lib20.Token;'
@@ -173,7 +173,7 @@ library Lib20 {
   , uint256 amount
   ) internal {
     uint256 accountBal = getBalanceOf(token, account);
-    if (amount > amount) {
+    if (amount > accountBal) {
       revert MaxSplaining({
         reason: "Max20:1"
       });

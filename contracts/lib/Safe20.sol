@@ -9,7 +9,7 @@
  *
  * @title: [Not an EIP] Safe ERC 20 Library
  * @author: Max Flow O2 -> @MaxFlowO2 on bird app/GitHub
- * @dev Library makes use of bool success on transfer, transferFrom and approve of EIP 20
+ * @notice Library makes use of bool success on transfer, transferFrom and approve of EIP 20
  */
 
 // SPDX-License-Identifier: Apache-2.0
