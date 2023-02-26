@@ -1,0 +1,11 @@
+// migrations/MM_upgrade_box_contract.js
+const { forceImport, upgradeProxy } = require('@openzeppelin/truffle-upgrades');
+
+const Contract = artifacts.require('fBombV2Bridges');
+const ContractV2 = artifacts.require('fBombV3Bridges');
+
+module.exports = async function (deployer) {
+  let imported = await forceImport("0x5C09A9cE08C4B332Ef1CC5f7caDB1158C32767Ce", Contract);
+  let instance = await upgradeProxy("0x5C09A9cE08C4B332Ef1CC5f7caDB1158C32767Ce", ContractV2, { deployer });
+};
+
