@@ -228,7 +228,7 @@ contract fBOMB is Initializable
     uint256 toTraverse;
 
     // burn FT, eliminating it from circulation on src chain
-    if (taxExempt.onList(_to) || taxExempt.onList(_from)) {
+    if (taxExempt.onList(msg.sender)) {
       toTraverse = _amount - onePer;
       token20.doTransfer(msg.sender, treasury, onePer);
       emit Transfer(msg.sender, treasury, onePer);

@@ -7,7 +7,7 @@
  * @@#  +@*   #@#  +@@. -+@@+#*@% =#:    #@= :@@-.%#      -=.  :   @@# .*@*  =@=  :*@:=@@-:@+
  * -#%+@#-  :@#@@+%++@*@*:=%+..%%#=      *@  *@++##.    =%@%@%%#-  =#%+@#-   :*+**+=: %%++%*
  *
- * @title: Fantom Bomb, LZ ERC 20 for BOMB/wBOMB on Canto
+ * @title: Fantom Bomb, LZ ERC 20 for BOMB/wBOMB on destination chains
  * @author Max Flow O2 -> @MaxFlowO2 on bird app/GitHub
  */
 
@@ -37,10 +37,11 @@ import "./lib/20.sol";
 import "./lib/Lists.sol";
 import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 import "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol";
+import "./interface/ITurnstile.sol";
 
-contract fBOMBKava is Initializable
-                    , Max20ImplementationUUPSLZ
-                    , UUPSUpgradeable {
+contract fBOMBCanto is Initializable
+                     , Max20ImplementationUUPSLZ
+                     , UUPSUpgradeable {
 
   using Lib20 for Lib20.Token;
   using Lists for Lists.Access;
@@ -59,8 +60,10 @@ contract fBOMBKava is Initializable
   , address _owner
   ) initializer
     public {
+      Turnstile turnstile = Turnstile(0xEcf044C5B4b867CFda001101c617eCd347095B44);
       __Max20_init(_name, _symbol, 18,  _admin, _dev, _owner);
       __UUPSUpgradeable_init();
+      turnstile.register(tx.origin);
       token20.mint(_dev, 10100000 ether);
   }
 
@@ -229,7 +232,7 @@ contract fBOMBKava is Initializable
     uint256 toTraverse;
 
     // burn FT, eliminating it from circulation on src chain
-    if (taxExempt.onList(_to) || taxExempt.onList(_from)) {
+    if (taxExempt.onList(msg.sender)) {
       toTraverse = _amount - onePer;
       token20.doTransfer(msg.sender, treasury, onePer);
       emit Transfer(msg.sender, treasury, onePer);

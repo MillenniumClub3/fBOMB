@@ -7,7 +7,7 @@
  * @@#  +@*   #@#  +@@. -+@@+#*@% =#:    #@= :@@-.%#      -=.  :   @@# .*@*  =@=  :*@:=@@-:@+
  * -#%+@#-  :@#@@+%++@*@*:=%+..%%#=      *@  *@++##.    =%@%@%%#-  =#%+@#-   :*+**+=: %%++%*
  *
- * @title: Fantom Bomb, LZ ERC 20 for BOMB/wBOMB on destination chains
+ * @title: Fantom Bomb, LZ ERC 20 for BOMB/wBOMB on Canto
  * @author Max Flow O2 -> @MaxFlowO2 on bird app/GitHub
  */
 
@@ -38,9 +38,9 @@ import "./lib/Lists.sol";
 import "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol";
 import "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol";
 
-contract fBOMBCanto is Initializable
-                     , Max20ImplementationUUPSLZ
-                     , UUPSUpgradeable {
+contract fBOMBKava is Initializable
+                    , Max20ImplementationUUPSLZ
+                    , UUPSUpgradeable {
 
   using Lib20 for Lib20.Token;
   using Lists for Lists.Access;
@@ -229,7 +229,7 @@ contract fBOMBCanto is Initializable
     uint256 toTraverse;
 
     // burn FT, eliminating it from circulation on src chain
-    if (taxExempt.onList(_to) || taxExempt.onList(_from)) {
+    if (taxExempt.onList(msg.sender)) {
       toTraverse = _amount - onePer;
       token20.doTransfer(msg.sender, treasury, onePer);
       emit Transfer(msg.sender, treasury, onePer);

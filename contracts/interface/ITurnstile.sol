@@ -53,7 +53,7 @@ interface Turnstile {
   /// @return true if smart contract is registered to collect fees, false otherwise
   function isRegistered(
     address _smartContract
-  ) public
+  ) external
     view
     returns (bool);
   

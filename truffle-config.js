@@ -284,16 +284,16 @@ module.exports = {
     // Canto
     CANTO: {
       provider: function() {
-        return new HDWalletProvider(process.env.MNEMONIC, "https://canto.slingshot.finance");
+        return new HDWalletProvider(process.env.MNEMONIC, "https://mainnode.plexnode.org:8545");
       },
       network_id: 7700,
       confirmations: 2,
       timeoutBlocks: 200,
       skipDryRun: true,
       verify: {
-        apiUrl: 'https://evm.explorer.canto.io/api',
+        apiUrl: 'https://tuber.build/api',
         apiKey: "none",
-        explorerUrl: 'https://evm.explorer.canto.io/',
+        explorerUrl: 'https://tuber.build',
       },
     },
 
