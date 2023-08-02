@@ -252,7 +252,7 @@ module.exports = {
     // Kava
     KAVA: {
       provider: function() {
-        return new HDWalletProvider(process.env.MNEMONIC, "https://evm.kava.io");
+        return new HDWalletProvider(process.env.MNEMONIC, "https://evm2.kava.io");
       },
       network_id: 2222,
       confirmations: 2,
@@ -362,7 +362,7 @@ module.exports = {
     // FTM
     FTM: {
       provider: function() {
-        return new HDWalletProvider(process.env.MNEMONIC, "https://rpc.fantom.tools");
+        return new HDWalletProvider(process.env.MNEMONIC, "https://endpoints.omniatech.io/v1/fantom/mainnet/public");
       },
       network_id: 250,
       confirmations: 2,
@@ -392,7 +392,112 @@ module.exports = {
       skipDryRun: true
     },
 
+    // zk's, zkevm/test - matic
+    zkEVMTest: {
+      provider: function() {
+        return new HDWalletProvider(process.env.MNEMONIC, "https://rpc.public.zkevm-test.net");
+      },
+      network_id: 1442,
+      confirmations: 2,
+      timeoutBlocks: 200,
+      skipDryRun: true
+    },
+
+    // zk's, zkevm
+    zkEVM: {
+      provider: function() {
+        return new HDWalletProvider(process.env.MNEMONIC, "https://zkevm-rpc.com");
+      },
+      network_id: 1101,
+      confirmations: 2,
+      timeoutBlocks: 200,
+      skipDryRun: true
+    },
+
+    // base
+    Base: {
+      provider: function() {
+        return new HDWalletProvider(process.env.MNEMONIC, "https://developer-access-mainnet.base.org");
+      },
+      network_id: 8453,
+      confirmations: 2,
+      timeoutBlocks: 200,
+      skipDryRun: true
+    },
+
+    // base test
+    BaseTest: {
+      provider: function() {
+        return new HDWalletProvider(process.env.MNEMONIC, "https://goerli.base.org");
+      },
+      network_id: 84531,
+      confirmations: 2,
+      timeoutBlocks: 200,
+      skipDryRun: true
+    },
+
+    // Mantle
+    Mantle: {
+      provider: function() {
+        return new HDWalletProvider(process.env.MNEMONIC, "https://rpc.mantle.xyz/");
+      },
+      network_id: 5000,
+      confirmations: 2,
+      timeoutBlocks: 200,
+      skipDryRun: true
+    },
+
+    // Mantle test
+    MantleTest: {
+      provider: function() {
+        return new HDWalletProvider(process.env.MNEMONIC, "https://rpc.testnet.mantle.xyz/");
+      },
+      network_id: 5001,
+      confirmations: 2,
+      timeoutBlocks: 200,
+      skipDryRun: true
+    },
+
+    // zk's, zksync test (280)
+    zkSyncTest: {
+      provider: function() {
+        return new HDWalletProvider(process.env.MNEMONIC, "https://testnet.era.zksync.dev");
+      },
+      network_id: 280,
+      confirmations: 2,
+      timeoutBlocks: 200,
+      skipDryRun: true
+    },
+
+    // zk's, zksync
+    zkSync: {
+      provider: function() {
+        return new HDWalletProvider(process.env.MNEMONIC, "https://mainnet.era.zksync.io");
+      },
+      network_id: 324,
+      confirmations: 2,
+      timeoutBlocks: 200,
+      skipDryRun: true
+    },
+
+    //pulsechain
+    Pulse: {
+      provider: function() {
+        return new HDWalletProvider(process.env.MNEMONIC, "https://rpc.pulsechain.com");
+      },
+      network_id: 369,
+      confirmations: 2,
+      timeoutBlocks: 200,
+      skipDryRun: true,
+      verify: {
+        apiUrl: 'https://scan.pulsechain.com/api',
+        apiKey: "none",
+        explorerUrl: 'https://scan.pulsechain.com',
+      },
+    },
   },
+
+
 
 
 
@@ -404,7 +509,7 @@ module.exports = {
   // Configure your compilers
   compilers: {
     solc: {
-      version: "^0.8.15",    // Fetch exact version from solc-bin (default: truffle's version)
+      version: "0.8.19",    // Fetch exact version from solc-bin (default: truffle's version)
       // docker: true,        // Use "0.5.1" you've installed locally with docker (default: false)
       settings: {          // See the solidity docs for advice about optimization and evmVersion
         optimizer: {
@@ -434,6 +539,7 @@ module.exports = {
     bttcscan: process.env.BTT_API_KEY,
     //aurorascan: 'MY_API_KEY',
     cronoscan: process.env.CRONOS_API_KEY,
+    basescan: process.env.BASE_API_KEY,
   }
 
   // Truffle DB is currently disabled by default; to enable it, change enabled:

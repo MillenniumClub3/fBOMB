@@ -7,9 +7,10 @@
     "chai": "^4.3.6",
     "dotenv": "^16.0.3",
     "truffle-plugin-stdjsonin": "github:mhrsalehi/truffle-plugin-stdjsonin",
-    "truffle-plugin-verify": "^0.5.33"
+    "truffle-plugin-verify": "^0.6.4"
   },
   "dependencies": {
-    "truffle": "^5.7.1"
+    "request-promise": "^4.2.6",
+    "truffle": "^5.11.1"
   }
 }
